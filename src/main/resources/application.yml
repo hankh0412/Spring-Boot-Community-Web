@@ -1,9 +1,14 @@
 spring:
 #  datasource:
-#    url: jdbc:mysql://
+#    url: jdbc:h2:mem:testdb
 #    username:
 #    password:
 #    driver-class-name: com.mysql.jdbc.Driver
+  datasource:
+    url: jdbc:mysql://localhost:3306/autoconfiguration
+    username: root
+    password: 1111
+    driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: create
